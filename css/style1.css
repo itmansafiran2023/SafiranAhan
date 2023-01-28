@@ -1,0 +1,214 @@
+@font-face {
+  font-family: iransansBold;
+         src: url('../font/IRANSansX-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../font/IRANSansX-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../font/IRANSansX-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('../font/IRANSansX-Bold.svg#svgFontName') format('svg'); /* Legacy iOS */
+	
+}
+@font-face {
+  font-family: iransans;
+  src: url('../font/IRANSansX-Black.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../font/IRANSansX-Black.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../font/IRANSansX-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('../font/IRANSansX-Bold.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+body {
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: iransansBold;
+  margin: 0px;
+  
+}
+#container {
+  display: grid;
+  grid-template-columns: repeat(8, minmax(100px, auto));
+  grid-template-rows: repeat(12, minmax(150px, auto));
+  max-width: 100%;
+  margin: 0px;
+}
+header, nav, section, article, footer {}
+header, footer {
+  padding: 5px;
+}
+header {
+  background-color: #BE3455;
+  grid-column: 1/9;
+  grid-row: 1/2;
+  position: relative;
+}
+nav {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(100px, auto));
+  grid-gap: 10px;
+  grid-column: 1/9;
+  grid-row: 2/3;
+}
+nav button {
+ font-family: iransanslight;
+	color: chocolate;
+	width: auto;
+	height: auto;
+}
+section {
+  background-color: darkgoldenrod;
+  grid-column: 1/9;
+  grid-row: 3/6;
+  padding: 150px;
+}
+article {
+  background-color: darkgreen;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(100px, auto));
+  grid-gap: 40px;
+  grid-column: 1/9;
+  grid-row: 6/12;
+  padding: 20px;
+}
+article div {
+  color: black;
+  padding: 100px;
+  border: 1px solid black;
+  background-color: lightgreen;
+}
+footer {
+  background-color: darkred;
+  grid-column: 1/9;
+  grid-row: 12/13;
+}
+h1{
+	font-family: iransansBold;
+	
+}
+img.logo_top{
+	width: 130px;
+	height: 130px;
+	position: absolute;
+	top: 10px;
+	right: 8px;
+	bottom: 10px;
+	border-radius: 8px;
+}
+div.news{
+	position: absolute;
+	top: 45px;
+	bottom: 45px;
+	right: 145px;
+	width: 900px;
+	height:70px;
+	background-color: white;
+	border-radius: 8px;
+}
+button.confirm{
+	margin-left: 5px;
+	position: absolute;
+	direction: ltr;
+	top: 100px;
+	left: 250px;
+	min-width: 120px;
+}
+
+div.listItemLeft{
+	position: absolute;
+    direction: ltr;
+	display: grid;
+	padding: 5px;
+}
+button.btnLeftTop{
+	margin-top: 4px;
+	margin-bottom: 4px;
+	width: 200px;
+	height: 25px;
+}
+div.lable{
+	margin-top: 5px;
+	display: grid;
+}
+lable.fortel{
+	font-family: iransansBold;
+	font-size: .6em;
+	color: rgb(10,10,10);
+}
+div.inputNumber{
+	display: block;
+	background-color: white;
+	border-radius: 5px;
+	border-color: gray;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 2px;
+	padding-right: 2px;
+	margin: 0px;
+	direction: ltr;
+	max-width: 350px;
+}
+input.tel{
+	font-family: iransans;
+	margin-bottom: 4px;
+	padding: 0px;
+	max-width: 350px;
+	border: none;
+	direction: ltr;
+	text-align: left;
+}
+::placeholder{
+	opacity: .5;
+	color: gray;
+}
+input.tel:hover,
+.tel:active,
+.tel:focus{
+	border: none;
+	outline: none
+	
+}
+.confirm {
+  min-width: 100px;
+  min-height: 10px;
+  font-family: iransansBold;
+  font-size: .6em;
+  color: rgb(10,10,10);
+  background: rgb(250,253,253);
+  border: none;
+  border-radius: 100px;
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  outline: none;
+  padding: 5px;
+  }
+
+.confirm::before {
+ 
+}
+
+.confirm:hover, .confirm:focus {
+  color: rgb(233,233,233);
+  background: rgb(192,122,42);
+  transform: translateY(-6px);
+}
+
+.confirm:hover::before, .confirm:focus::before {
+  opacity: 1;
+}
+
+.confirm::after {
+  content: '';
+  width: 30px; height: 30px;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: ring 0.5s infinite;
+}
+
+.confirm:hover::after, .confirm:focus::after {
+  animation: none;
+  display: none;
+}
+.confirm:active:{
+	
+}
+
+
